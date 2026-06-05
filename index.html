@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora — addEventListener</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <div class="calc-header">
+      <h1 class="calc-title">Calculadora</h1>
+      <p class="calc-subtitle">Versión addEventListener</p>
+    </div>
+
+    <div class="display">
+      <div class="display-expression" id="expresion"></div>
+      <input type="text" id="resultado" value="0" readonly />
+    </div>
+
+    <div class="botones">
+      <button class="operador btn-clear" id="btn-c">C</button>
+      <button class="operador btn-back"  id="btn-back">&#8592;</button>
+      <button class="operador btn-pct"   id="btn-pct">%</button>
+      <button class="operador btn-op"    id="btn-div">&#247;</button>
+
+      <button class="numero" id="btn-7">7</button>
+      <button class="numero" id="btn-8">8</button>
+      <button class="numero" id="btn-9">9</button>
+      <button class="operador btn-op" id="btn-mul">&#215;</button>
+
+      <button class="numero" id="btn-4">4</button>
+      <button class="numero" id="btn-5">5</button>
+      <button class="numero" id="btn-6">6</button>
+      <button class="operador btn-op" id="btn-sub">&#8722;</button>
+
+      <button class="numero" id="btn-1">1</button>
+      <button class="numero" id="btn-2">2</button>
+      <button class="numero" id="btn-3">3</button>
+      <button class="operador btn-op" id="btn-add">+</button>
+
+      <button class="numero btn-zero" id="btn-0">0</button>
+      <button class="numero"          id="btn-dot">.</button>
+      <button class="operador btn-equals" id="btn-eq">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
